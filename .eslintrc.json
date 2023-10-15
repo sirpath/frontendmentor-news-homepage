@@ -1,0 +1,77 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:react/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": [
+    "simple-import-sort",
+    "tailwindcss"
+  ],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "@typescript-eslint/semi": [
+      "error",
+      "never"
+    ],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          [
+            "^\\u0000",
+            "^@?\\w",
+            "^[^.]",
+            "^\\."
+          ]
+        ]
+      }
+    ],
+    "object-curly-newline": [
+      "error",
+      {
+        "ImportDeclaration": "never"
+      }
+    ],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "export"
+      },
+      {
+        "blankLine": "any",
+        "prev": "export",
+        "next": "export"
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/react-in-jsx-scope": "off",
+    "newline-before-return": "error",
+    "max-len": "off",
+    "linebreak-style": "off",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "no-nested-ternary": "off",
+    "jsx-a11y/control-has-associated-label": "off"
+  },
+  "ignorePatterns": [
+    "postcss.config.js",
+    "next.config.js"
+  ]
+}
