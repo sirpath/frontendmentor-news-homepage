@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import BlogContents from '@/Components/BlogContents'
+import Footer from '@/Components/Footer'
 import HeroSection from '@/Components/HeroSection'
 import NavBar from '@/Components/NavBar'
-import Test from '@/Components/Test'
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -14,7 +14,7 @@ const PageHome = () => (
     <NavBar />
     <HeroSection />
     <BlogContents />
-    <Test />
+    <Footer />
   </main>
 )
 

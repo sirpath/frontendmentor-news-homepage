@@ -11,19 +11,19 @@ type DataBlog = {
 
 const dataBlog: Array<DataBlog> = [
   {
-    image: '/images/image-retro-pcs.jpg',
+    image: './images/image-retro-pcs.jpg',
     no: '01',
     subject: 'Reviving Retro PCs',
     detail: 'What happens when old PCs are given modern upgrades?',
   },
   {
-    image: '/images/image-top-laptops.jpg',
+    image: './images/image-top-laptops.jpg',
     no: '02',
     subject: 'Top 10 Laptops of 2022',
     detail: 'Our best picks for various needs and budgets.',
   },
   {
-    image: '/images/image-gaming-growth.jpg',
+    image: './images/image-gaming-growth.jpg',
     no: '03',
     subject: 'The Growth of Gaming',
     detail: 'How the pandemic has sparked fresh opportunities.',

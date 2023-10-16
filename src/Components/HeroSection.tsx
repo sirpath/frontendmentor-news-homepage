@@ -24,8 +24,8 @@ const HeroSection = () => (
   <div className="w-full max-w-7xl px-5 py-6 md:flex md:gap-4">
     <div className="">
       <div>
-        <Image className="md:hidden" width={686} height={600} src="/images/image-web-3-mobile.jpg" alt="bg-hero-mobile" />
-        <Image className="hidden md:block" width={1460} height={600} src="/images/image-web-3-desktop.jpg" alt="bg-hero-desktop" />
+        <Image className="md:hidden" width={686} height={600} src="./images/image-web-3-mobile.jpg" alt="bg-hero-mobile" />
+        <Image className="hidden md:block" width={1460} height={600} src="./images/image-web-3-desktop.jpg" alt="bg-hero-desktop" />
       </div>
       <div className="flex flex-col md:flex-row">
         <div className="pt-5 text-5xl font-bold text-very-dark-blue lg:w-1/2 lg:text-6xl">

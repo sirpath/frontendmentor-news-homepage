@@ -13,7 +13,7 @@ const NavBars = () => {
     <div className=" flex w-full items-center justify-center md:pt-7 lg:pt-14">
       <div className="flex w-full max-w-7xl items-center justify-between px-6 py-3">
         <div className="self-center">
-          <Image width={50} height={20} src="/images/logo.svg" alt="logo" />
+          <Image width={50} height={20} src="./images/logo.svg" alt="logo" />
         </div>
         <div className="hidden md:block">
           <div className="flex gap-4 [&_a]:px-2">
@@ -30,7 +30,7 @@ const NavBars = () => {
             <div className="drawer-content z-10">
               <label htmlFor="my-drawer-4" className="btn swap drawer-button swap-rotate h-0 min-h-0 border-0 bg-transparent p-0">
                 <input type="checkbox" />
-                <Image onClick={handleClick} width={40} height={40} src={`${click ? '/images/icon-menu-close.svg' : '/images/icon-menu.svg'}`} alt="logo" />
+                <Image onClick={handleClick} width={40} height={40} src={`${click ? './images/icon-menu-close.svg' : './images/icon-menu.svg'}`} alt="logo" />
               </label>
             </div>
             <div className="drawer-side">
