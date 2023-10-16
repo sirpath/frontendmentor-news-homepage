@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 type DataBlog = {
   image: string
@@ -32,7 +33,7 @@ const dataBlog: Array<DataBlog> = [
 
 const BlogContents = () => (
 
-  <section className="flex flex-col gap-8 px-5 py-14">
+  <section className="flex w-full max-w-7xl flex-col gap-8 px-5 py-10 pb-20 md:flex-row">
     {dataBlog.map(({ image, detail, no, subject }) => (
       <div key={no} className="flex">
         <div className="h-full w-full max-w-[110px]">
@@ -40,7 +41,7 @@ const BlogContents = () => (
         </div>
         <div className="pl-5">
           <div className="text-3xl font-semibold text-secondary">{no}</div>
-          <h3 className="py-3 text-xl font-semibold text-very-dark-blue">{subject}</h3>
+          <Link href="/" className="py-3 text-xl font-semibold text-very-dark-blue hover:text-soft-red">{subject}</Link>
           <p className="text-hcolor">{detail}</p>
         </div>
       </div>
